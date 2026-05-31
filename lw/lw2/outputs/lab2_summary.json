@@ -1,0 +1,33 @@
+{
+  "mympl_experiments_count": 5,
+  "best_classification": {
+    "model": "MyMLP clf 1",
+    "architecture": "[4, 8, 3]",
+    "accuracy": 0.9666666666666667,
+    "f1_macro": 0.9665831244778612
+  },
+  "best_regression": {
+    "model": "MyMLP reg 1",
+    "architecture": "[10, 32, 1]",
+    "r2": 0.42809641713861935,
+    "rmse": 55.04572615126385
+  },
+  "sklearn": {
+    "classification_accuracy": 0.9666666666666667,
+    "classification_f1_macro": 0.9665831244778612,
+    "regression_r2": 0.48968544777221823,
+    "regression_rmse": 51.99734548204445
+  },
+  "keras": {
+    "classification_accuracy": 0.9333333333333333,
+    "classification_f1_macro": 0.9333333333333332,
+    "regression_r2": 0.1323519936391837,
+    "regression_rmse": 67.80066962794322
+  },
+  "pytorch": {
+    "classification_accuracy": 0.9333333333333333,
+    "classification_f1_macro": 0.9326599326599326,
+    "regression_r2": 0.5127122464521215,
+    "regression_rmse": 50.81067273211819
+  }
+}

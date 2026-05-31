@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "underfit_test_acc": 0.4549,
+    "overfit_test_acc": 0.4874,
+    "regularized_test_acc": 0.5682,
+    "final_test_acc": 0.5682,
+    "threshold_50": true,
+    "overfit_best_val_loss_epoch": 4,
+    "best_val_accuracy": 0.5819
+  },
+  "results": [
+    {
+      "Модель": "Маленькая Dense-сеть",
+      "Описание": "Input -> Dense(32) -> Dense(10)",
+      "Эпох": 15,
+      "Train accuracy": 0.5501,
+      "Validation accuracy": 0.4558,
+      "Test accuracy": 0.4549,
+      "Время обучения, сек": 15.5,
+      "Комментарий": "Недообучение"
+    },
+    {
+      "Модель": "Большая Dense-сеть без регуляризации",
+      "Описание": "Input -> Dense(1024) -> Dense(512) -> Dense(256) -> Dense(10)",
+      "Эпох": 25,
+      "Train accuracy": 0.8689,
+      "Validation accuracy": 0.494,
+      "Test accuracy": 0.4874,
+      "Время обучения, сек": 361.0,
+      "Комментарий": "Переобучение примерно с 4-й эпохи"
+    },
+    {
+      "Модель": "Регуляризованная Dense-сеть",
+      "Описание": "Dense(2048, 1024, 512, 256) + Dropout + L2 + callbacks",
+      "Эпох": 69,
+      "Train accuracy": 0.7794,
+      "Validation accuracy": 0.58,
+      "Test accuracy": 0.5682,
+      "Время обучения, сек": 2718.4,
+      "Комментарий": "Лучшая модель"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "dataset": "CIFAR-10",
+  "pretrained_weights_used": true,
+  "train_size": 800,
+  "val_size": 200,
+  "test_size": 400,
+  "batch_size": 32,
+  "epochs": 5,
+  "feature_extraction_time_sec": {
+    "train": 29.528550700022606,
+    "val": 7.344324100005906,
+    "test": 14.318866699992213
+  },
+  "baseline": {
+    "model_path": "C:\\itmo\\Выпуклый анализ и глубокое обучение\\lw\\lw3\\models\\resnet18_baseline.pth",
+    "metrics": {
+      "accuracy": 0.7675,
+      "precision_macro": 0.7671764346764346,
+      "recall_macro": 0.7724951705411766,
+      "f1_macro": 0.7677097158983635
+    },
+    "train_time_sec": 0.5959310999896843,
+    "inference_time_sec": 0.02185059999465011,
+    "trainable_params": 5130
+  },
+  "attention": {
+    "model_path": "C:\\itmo\\Выпуклый анализ и глубокое обучение\\lw\\lw3\\models\\resnet18_attention.pth",
+    "metrics": {
+      "accuracy": 0.765,
+      "precision_macro": 0.7721873046137916,
+      "recall_macro": 0.7689606012457377,
+      "f1_macro": 0.7650278873016046
+    },
+    "train_time_sec": 13.90706080000382,
+    "inference_time_sec": 0.40842350001912564,
+    "trainable_params": 333451
+  }
+}

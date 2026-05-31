@@ -1,0 +1,3 @@
+﻿Модель,Архитектура,Что обучалось,Trainable params,Epochs,"Train time, sec","Inference time, sec",Test accuracy,Precision macro,Recall macro,F1 macro,Комментарий
+ResNet18,Предобученная ResNet18,Только fc,5130,5,0.5959310999896843,0.02185059999465011,0.7675,0.7671764346764346,0.7724951705411766,0.7677097158983635,Baseline без attention
+ResNet18 + Self-Attention,ResNet18 + SelfAttention2d после layer4,attention + fc,333451,5,13.90706080000382,0.40842350001912564,0.765,0.7721873046137916,0.7689606012457377,0.7650278873016046,Добавлен Self-Attention
